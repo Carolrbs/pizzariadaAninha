@@ -1,0 +1,12 @@
+.pai{
+    background-color: rgb(205, 244, 231);
+    width: 75%;
+    height: 200px;
+}
+
+.filho{
+    background-color: rgb(115, 115, 223);
+    width: 50vw; /*largura da tela*/
+    height: 200px;
+
+}
