@@ -19,3 +19,26 @@ header{
 .header__title--blue{
     color: rgb(86, 144, 219);
 }
+
+footer{
+    width: 100vw;
+    height: 115px;
+   display: flex;
+   background-color: #5a9bcd;
+   justify-content: space-around;
+   align-items: center;
+    /* gap faz o mesmo que o space around porem manualmente */
+}
+.footer__column{
+    width: 16%;
+    text-align: center;
+}
+.footer__redesocial{
+    display: flex;
+    flex-direction: column;
+}
+.footer__redesocial{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
