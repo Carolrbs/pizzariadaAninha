@@ -1,47 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Declara o tipo de documento (HTML5) -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria da Aninha</title>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o site seja responsivo -->
+    <title>Pizzaria da Aninha</title> <!-- Título da aba do navegador -->
+
+    <!-- Importa os arquivos CSS: reset, estilo principal e estilo de amostras -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/samples.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Importa os ícones da Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- block__element--modificar -->
+    <!-- Cabeçalho da página -->
     <header class="header">    
         <h1 class="header__title">Aninha Pizzaria - 
-            <span class="header__title--blue"> Menu</span></h1>
+            <span class="header__title--blue"> Menu</span> <!-- Parte do título com destaque azul -->
+        </h1>
     </header> 
-    <!-- div pai e filho exemplos
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Formulário de login -->
+        <form class="form" action="">
+            <span>Login</span> <!-- Título do formulário -->
+
+            <!-- Campo de login -->
+            <input class="form_input" type="text" id="login" placeholder="Login">
+
+            <!-- Campo de senha -->
+            <input class="form_input" type="password" id="senha" placeholder="Senha">
+
+            <!-- Área dos botões do formulário -->
+            <div class="form__btn-area">
+                <!-- Botão de registro -->
+                <input class="form__bnt" type="button" value="Registrar">
+
+                <!-- Botão de login -->
+                <input class="form__bnt footer__btn--action" type="submit" value="Login">
+            </div>
+        </form> 
+    </main>
+
+    <!-- Exemplo de comentário explicando a estrutura de pai e filho -->
+    <!-- 
     <div class="pai">
         <p>Esta é a div pai.</p>
         <div class="filho">
             <p>Esta é a div filho.</p>
         </div>
-    </div> -->
+    </div>
+    -->
 
-<footer class="footer">
-    <address class="footer__columns footer__address"> 
-        <!-- a tag address é somente par endereço de vias -->
-        Endereço:<br> Rua das Flores, 123<br> São Paulo, SP
-      </address>
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Endereço da pizzaria -->
+        <address class="footer__columns footer__address"> 
+            <!-- A tag address é usada para informações de contato/endereço -->
+            Endereço:<br> Rua das Flores, 123<br> São Paulo, SP
+        </address>
       
-      <section class="footer__columns footer__redesocial">
-        <p class="footer__redesocial">Siga nas redes sociais<br>
-         <div>  
-        <a href="#"></a><i class="fa-brands fa-facebook-f"></i><a>  
-        <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"></a><i class="fa-brands fa-whatsapp"></i></a>
-       
-    </div>  
-    </section>
-        <!-- mandar tudo para baixo vc clica alt seta para baixo -->
-      <div class="footer__columns footer__dev">
-        <p>Desenvolvido por Carolrbs -Soluções Digitais<p>
-      </div>
-</footer>
+        <!-- Redes sociais -->
+        <section class="footer__columns footer__redesocial">
+            <p class="footer__redesocial">Siga nas redes sociais<br>
+            
+            <!-- Ícones de redes sociais -->
+            <div class="footer__social-icon">  
+                <a href="#"><i class="footer__social-icon fa-brands fa-facebook-f"></i></a> <!-- Facebook -->
+                <a href="#"><i class="footer__social-icon fa-brands fa-instagram"></i></a> <!-- Instagram -->
+                <a href="#"><i class="footer__social-icon fa-brands fa-whatsapp"></i></a> <!-- WhatsApp -->
+            </div>  
+        </section>
+
+        <!-- Créditos do desenvolvedor -->
+        <div class="footer__columns footer__dev">
+            <p>Desenvolvido por Carolrbs - Soluções Digitais</p>
+        </div>
+    </footer>
 </body>
 </html>
