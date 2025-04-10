@@ -1,9 +1,13 @@
 /* Importa duas fontes do Google Fonts: 'Bungee Tint' e 'Open Sans' */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root{--color-primaria:#be1f0ad8;
+}
+:root{--color-secundaria:rgb(90, 35, 20);}
+
 /* Estilização do cabeçalho (header) */
 header{
-    background-color: #d5eafa; /* Cor de fundo azul clara */
+    background-color: var(--color-primaria); /* Cor de fundo azul clara */
     width: 100vw; /* Largura igual a 100% da largura da tela */
     height:20vh; /* Altura igual a 20% da altura da tela */
     display: flex; /* Usa Flexbox que é umum elemento pai, ele transforma esse elemento em um container flexível.*/
@@ -21,7 +25,7 @@ header{
 
 /* Modificador do título para deixá-lo azul */
 .header__title--blue{
-    color: rgb(86, 144, 219); /* Cor azul */
+    color:var(--color-secundaria); /* Cor azul */
 }
 
 /* Estiliza todos os elementos h1 */
@@ -56,7 +60,7 @@ main{
     align-items: center; /* Centraliza os itens na horizontal */
     gap: 16px; /* Espaço entre os elementos internos */
     border-radius: 25px; /* Bordas arredondadas */
-    background-color: #d5eafa; /* Fundo azul claro */
+    background-color: var(--color-primaria); /* Fundo azul claro */
     box-shadow: 0px 4px 4px 0px rgb(160, 160, 160); /* Sombra */
     position: relative;
     left: 100px;
@@ -79,6 +83,11 @@ main{
     box-shadow: 0px 4px 4px 0px rgb(110, 108, 108); /* Sombra */
 }
 
+.form__bnt:hover{
+    background-color:#84f0f4;
+    color:black;
+}
+
 /* Variante do botão, com ação específica (ex: salvar ou enviar) */
 .footer__btn--action{
     background-color: rgb(8, 122, 11); /* Cor verde para destacar */
@@ -89,7 +98,7 @@ footer{
     width: 100vw; /* Largura total da tela */
     height: 20vh; /* Altura de 20% da tela */
     display: flex; /* Usa Flexbox */
-    background-color: #5a9bcd; /* Fundo azul médio */
+    background-color:var(--color-secundaria); /* Fundo azul médio */
     justify-content: space-around; /* Distribui os elementos com espaçamento igual */
     align-items: center; /* Centraliza verticalmente */
     /* gap faz o mesmo que o space-around porém manualmente */

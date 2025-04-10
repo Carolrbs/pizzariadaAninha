@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o site seja responsivo -->
-    <title>Pizzaria da Aninha</title> <!-- Título da aba do navegador -->
+    <title>juquinha pizzas</title> <!-- Título da aba do navegador -->
 
     <!-- Importa os arquivos CSS: reset, estilo principal e estilo de amostras -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -20,7 +20,7 @@
 <body>
     <!-- Cabeçalho da página -->
     <header class="header">    
-        <h1 class="header__title">Aninha Pizzaria - 
+        <h1 class="header__title">Juquinha Pizzas - 
             <span class="header__title--blue"> Menu</span> <!-- Parte do título com destaque azul -->
         </h1>
     </header> 
@@ -32,11 +32,11 @@
             <span>Login</span> <!-- Título do formulário -->
 
             <!-- Campo de login -->
-            <input class="form_input" type="text" id="login" placeholder="Login">
+            <input class="form_input" type="email" id="login" placeholder="Login" required>
 
             <!-- Campo de senha -->
-            <input class="form_input" type="password" id="senha" placeholder="Senha">
-
+            <input class="form_input" type="password" id="senha" placeholder="Senha" required maxlength="8">
+            
             <!-- Área dos botões do formulário -->
             <div class="form__btn-area">
                 <!-- Botão de registro -->
